@@ -37,6 +37,43 @@ h3 {
   font-style: 18px;
 }
 
-#form #inputBox {
+#form .inputBox {
   position: relative;
+}
+
+#text {
+  display: block;
+  color: #000;
+  font-weight: 500i;
+  font-style: italic;
+  padding: 5px;
+}
+
+#form.invalid .inputBox:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  background: url(invalid.png);
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.valid .inputBox:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  background: url(valid.png);
+  background-size: cover;
+  z-index: 1000;
+}
+
+p {
+  margin-top: 1vh;
+  margin-left: 0.5vh;
 }
